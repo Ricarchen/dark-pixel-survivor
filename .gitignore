@@ -1,0 +1,8 @@
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.tmp
+*.log
+
+# Engine and build outputs will be added after the final engine is selected.
