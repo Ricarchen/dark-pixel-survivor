@@ -10,7 +10,7 @@
 
 - 产品定位与宏观循环已经建立；
 - 武器系统已经形成首份完整详细报告；
-- 角色技能进化网络、关卡结构、怪物生态和技术框架仍需继续讨论；
+- 角色技能进化网络已开始形成独立报告并确认开放式多路线拓扑；成长窗口、节点语法、关卡结构、怪物生态和技术框架仍需继续讨论；
 - 最终引擎、2D／2.5D／3D 表现与实现架构尚未锁定；
 - 本仓库暂不包含旧 Phaser 浏览器原型代码。
 
@@ -22,16 +22,18 @@
 
 1. [目标游戏宏观设计](./docs/design/TARGET_GAME_DESIGN.md)
 2. [详细设计决策账本](./docs/design/GAME_ARCHITECTURE.md)
-3. [武器系统完整设计报告](./docs/design/systems/WEAPON_SYSTEM.md)
-4. [设计报告治理规范](./docs/design/DESIGN_GOVERNANCE.md)
-5. [设计追踪矩阵](./docs/design/DESIGN_TRACEABILITY.md)
-6. [旧 Phaser 原型隔离说明](./docs/design/legacy/README.md)
+3. [角色技能进化网络设计报告](./docs/design/systems/CHARACTER_EVOLUTION_NETWORK.md)
+4. [武器系统完整设计报告](./docs/design/systems/WEAPON_SYSTEM.md)
+5. [设计报告治理规范](./docs/design/DESIGN_GOVERNANCE.md)
+6. [设计追踪矩阵](./docs/design/DESIGN_TRACEABILITY.md)
+7. [旧 Phaser 原型隔离说明](./docs/design/legacy/README.md)
 
 完整索引见 [docs/design/README.md](./docs/design/README.md)。
 
 ## 核心支柱
 
 - 每个角色拥有独立技能进化网络、专属武器家族和个人故事关卡。
+- 角色网络不设固定主／副路线；有限机会控制广度，局部前置控制深度。
 - 普通经验、角色技能成长和命名武器成长分层处理。
 - 玩家持有正手与副手；正手手动操控，副手自动攻击且行为不同。
 - D/C/B/A/S 是不同命名武器的固定底盘，不是同名武器不断变色。
@@ -57,4 +59,4 @@
 
 ## 下一设计阶段
 
-下一步是建立角色技能进化网络的通用语法，再用首个角色同时验证角色网络、专属武器家族与个人故事关卡，随后确定标准局节奏，并据此选择最终引擎和代码架构。
+下一步是继续完成角色技能进化网络的成长窗口、节点、候选与融合语法，再用首个角色同时验证角色网络、专属武器家族与个人故事关卡，随后确定标准局节奏，并据此选择最终引擎和代码架构。
